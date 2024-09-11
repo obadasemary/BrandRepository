@@ -1,5 +1,5 @@
 //
-//  BrandsRepository.swift
+//  BrandDetailsRepository.swift
 //
 //
 //  Created by Abdelrahman Mohamed on 10/09/2024.
@@ -10,7 +10,7 @@ import NetworkLayer
 import CoreAPI
 import BrandUseCase
 
-public class BrandsRepository {
+public class BrandDetailsRepository {
     
     private let networkService: NetworkService
     
@@ -19,7 +19,7 @@ public class BrandsRepository {
     }
 }
 
-extension BrandsRepository: BrandsRepositoryProtocol {
+extension BrandDetailsRepository: BrandDetailsRepositoryProtocol {
     
     public func getBrandDetails(
         brandId: String,

@@ -12,6 +12,6 @@ BrandRepository's compact syntax and extensive feature set allow requests with p
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/obadasemary/BrandRepository.git", .upToNextMajor(from: "1.0.1"))
+    .package(url: "https://github.com/obadasemary/BrandRepository.git", .upToNextMajor(from: "1.0.2"))
 ]
 ```

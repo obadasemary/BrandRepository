@@ -24,9 +24,18 @@ extension BrandDetailsRepository: BrandDetailsRepositoryProtocol {
     public func getBrandDetails(
         brandId: String,
         page: Int,
-        perPage: Int
+        perPage: Int,
+        cursor: String?
     ) async throws -> BrandResponseEntity {
-        let endpoint = BrandEndpoint.getBrandDetails(brandId: brandId, page: page, perPage: perPage)
-        return try await networkService.request(endpoint: endpoint, responseModel: BrandResponseEntity.self)
+        let endpoint = BrandEndpoint.getBrandDetails(
+            brandId: brandId,
+            page: page,
+            perPage: perPage,
+            cursor: cursor
+        )
+        return try await networkService.request(
+            endpoint: endpoint,
+            responseModel: BrandResponseEntity.self
+        )
     }
 }
